@@ -1,0 +1,65 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.17.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/storres/repos/testthis/package.json: Unexpected token } in JSON at position 893
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "dca-fe",
+    "version": "0.0.0",
+    "description": "FE for Mean Finance",
+    "private": true,
+    "scripts": {
+      "build": "webpack --config webpack.prod.js",
+      "start": "webpack serve --config webpack.dev.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Mean-Finance/dca-fe.git"
+    },
+    "author": "seba.j.torres@gmail.com",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Mean-Finance/dca-fe/issues"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.14.3",
+      "@babel/preset-env": "^7.14.2",
+      "@babel/preset-react": "^7.13.13",
+      "babel-loader": "^8.2.2",
+      "html-webpack-plugin": "^5.3.1",
+      "react-hot-loader": "^4.13.0",
+      "webpack": "^5.37.1",
+      "webpack-cli": "^4.7.0",
+      "webpack-dev-server": "^3.11.2",
+      "webpack-merge": "^5.7.3"
+    },
+    "dependencies": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
